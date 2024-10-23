@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch7 Assignment07</title>
+    <style>
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        form {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+
+        @media (max-width: 768px) {
+            
+            form {
+                width: 100%;
+
+            }
+            fieldset{
+                margin: 0 2rem;
+            }
+            
+        }
+            </style> 
+</head>
+
+<body>
+
+    <h1>Chapter # 07 - Forms</h1>
+    <form action="">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <p>How did you here about us?
+                <select name="option">
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="1">Google</option>
+                    <option value="2">Yahoo</option>
+                    <option value="3">Bing</option>
+                    <option value="4">Others</option>
+
+                </select>
+            </p>
+
+            <p>Would you like to visit again>?
+                <input type="radio" id="yes" name="visit" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="visit" value="no">
+                <label for="no">No</label>
+                <input type="radio" id="maybe" name="visit" value="maybe">
+                <label for="maybe">Maybe</label>
+            </p>
+
+            <label for="comment">Comments:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="7" cols="50"></textarea><br><br>
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Sign me up for email updates</label>
+            <br> <br>
+            <input type="submit" value="submit review">
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
